@@ -4,7 +4,6 @@ import { faker } from '@faker-js/faker/locale/en';
 describe('Registration Amazon before Captcha', () => {
   it('Inserting Faker data to registration', () => {
     let fullname = faker.person.fullName();
-    let username = faker.internet.userName();
     let password = faker.internet.password();
     let email = faker.internet.exampleEmail();
     cy.visit('https://www.amazon.com');
